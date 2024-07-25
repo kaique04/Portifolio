@@ -1,0 +1,86 @@
+section #projetos {
+  height: 800px;
+}
+
+.card {
+  flex: 1;
+  height: 100%;
+  transition: all 700ms;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden; /* Adicionado para garantir que o conteúdo fique dentro do card */
+}  
+
+.card .img-port {
+  position: relative; 
+  height: 100%;
+  border-radius: 10px;
+}
+
+.overley {
+  color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.547);
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.card:hover .overley {
+  opacity: 1;
+}
+
+.img-port img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#Projetos .centralizar {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.container {
+  width: 600px;
+  max-width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  transition: all 400ms;
+}
+
+.card:nth-child(odd) {
+  translate: 0 -20px;
+}
+
+.card:nth-child(even) {
+  translate: 0 -20px;
+}
+
+.card:hover {
+  flex: 3;
+}

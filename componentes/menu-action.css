@@ -1,0 +1,9 @@
+.menu-action{
+    transition: 0.8s;
+    display: inline-block;
+}
+
+.menu-action:hover{
+    color: white;
+    transform: scale(1.08);
+  }

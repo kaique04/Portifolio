@@ -1,0 +1,48 @@
+.skill-tec{
+    display: flex;
+    font-size: 15px;
+    color: white;
+}
+
+.skill-tec .icon{
+    margin-top: 50px;
+    margin-left:100px;
+    height:50px;
+    transition: 0.5s;
+}
+
+.skill-tec .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+
+.skill-tec .title{
+    margin: 0px;
+    padding-top: 5px;
+    margin-top: 25px;
+}
+
+.skill-tec .icon:hover{
+    transform: scale(1.08);
+}
+
+.skill-tec .java{
+    margin-top: 45px;
+    margin-left:80px;
+    height:50px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.skill-tec .java:hover{
+    transform: scale(1.08);
+}
+
+.skill-tec .title-java{
+    margin: 0px;
+    margin-left: 140px;
+    padding-top: 30px;
+}
+
