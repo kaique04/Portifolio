@@ -1,3 +1,4 @@
+
 section #projetos {
   height: 800px;
 }
@@ -36,7 +37,7 @@ section #projetos {
   border-radius: 10px;
 }
 
-.card:hover .overley {
+.card:hover .overley{
   opacity: 1;
 }
 
@@ -84,3 +85,6 @@ section #projetos {
 .card:hover {
   flex: 3;
 }
+
+
+

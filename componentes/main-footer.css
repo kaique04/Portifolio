@@ -16,3 +16,8 @@
 .action:hover{
     transform: scale(1.08);
 }
+
+.action .insta{
+    height: 53px;
+    margin-top: -2px;
+}
