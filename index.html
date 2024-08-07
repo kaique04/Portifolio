@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="componentes/button-arrow.css">
 <link rel="stylesheet" href="componentes/node-card.css">
 <link rel="stylesheet" href="componentes/main-footer.css">
+<link rel="stylesheet" href="componentes/formulario.css">
 
 </head>
 
@@ -30,7 +31,7 @@
                 <a class="menu-action" href="#Experiencia">Experiencias</a>
                 <a class="menu-action" href="#Skills ">Skills</a>
                 <a class="menu-action" href="#Projetos ">Projetos</a>
-                <a class="menu-action" href="#Sobre ">Formulario</a>
+                <a class="menu-action" href="#formulario ">Form</a>
             </nav>
             <a id="button" href="#">Download CV
             </a>
@@ -139,11 +140,19 @@
                 </div>
         </section>
 
-        <section id="Sobre">
-            <h2>Formulario</h2>
-
-            <p> </p>
-
+        <section class="formulario" id="formulario">
+            <h2>formulario</h2>
+            <div class="interface">
+                
+                    <form method="post" action="form.php">
+                        <!-- Para tornar obrigatorio o envio de quaisquer informação use o atributo "required" -->
+                        <input type="text" id="nome" name="nome"  placeholder="Seu nome completo">
+                        <input type="text" id="email" name="email"  placeholder="Seu E-mail">
+                        <input type="text" id="telefone" name="telefone"  placeholder="Seu Seu celular">
+                        <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    </form>
+            </div>
 
         </section>
 

@@ -2,8 +2,11 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/kng.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -25,7 +28,7 @@ main {
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5 , 1fr);
     gap: 15px;
     width: 100%;
     max-width: 1200px;
@@ -58,7 +61,7 @@ main {
   }
   
   .back {
-    background-color: black;
+    background-image: url('../images/backcard.jpg');
     backface-visibility: hidden;
   }
   

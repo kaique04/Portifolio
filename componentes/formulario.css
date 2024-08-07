@@ -1,0 +1,47 @@
+section.formulario{
+
+}
+
+
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+}
+/* para mudar a cor do placeholder 
+usar o "form input::placeholder" */
+
+form textarea{
+    resize: none;
+    max-height: 250px;
+}
+
+form .btn-enviar{
+    margin-top: 10px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* para mudar um tipo só de input podera usar o [type=submit] */
+
+form .btn-enviar input:hover{
+    transform: scale(1.08);
+}
