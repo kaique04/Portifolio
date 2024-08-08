@@ -75,18 +75,46 @@ main{
     margin-top: 10px;
 }
 
-/*{
-    margin: 15px 0px;
-    
-    width: 540px;
-    margin-left: 15px;
-    margin-top: 30px;  
-}
-*/
 main h2{
     text-align: center;
 
 }
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+section .txt-top-site p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 20px
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px
+    }
+}
+.perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: black;
+    margin-bottom: 70px;
+}
+
+.flex{
+    display: flex;
+}
+
 
 #Skills{
     border-bottom: 10px solid black;
@@ -117,11 +145,4 @@ main h2{
     font-size: 20px;
 }
 
-.perfil{
-    width: 200px;
-    height: 250px;
-    border-radius: 15px;
-    background-color: black;
-    margin-bottom: 10px;
-}
 

@@ -45,3 +45,14 @@ form .btn-enviar input{
 form .btn-enviar input:hover{
     transform: scale(1.08);
 }
+
+.success, .error{
+    text-align: center;
+}
+.success{
+    color: green;
+}
+
+.error{
+    color: red ;
+}

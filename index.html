@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="componentes/node-card.css">
 <link rel="stylesheet" href="componentes/main-footer.css">
 <link rel="stylesheet" href="componentes/formulario.css">
+<script defer src="app.js"></script>
 
 </head>
 
@@ -39,20 +40,19 @@
         
     </header>
     <main>
-        <section>
-            <h2>Seja Bem vindo ao meu portifolio</h2>
-
-            <div class="central">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea autem aperiam porro unde tempore
-                    voluptatum voluptates consequatur in, inventore cum quas debitis molestias expedita magni magnam sit
-                    ex maxime fuga! </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quisquam provident reprehenderit
-                    incidunt nobis voluptate, architecto iure tenetur, voluptatibus non dolor eum autem labore dolorem
-                    quidem consequuntur totam excepturi voluptatum!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, eligendi porro? Beatae
-                    praesentium corporis commodi totam! Temporibus atque quaerat reiciendis voluptatem praesentium, ex,
-                    labore culpa voluptates quidem, ab veritatis et.</p>
-                <img class="perfil" src="images/" alt="">
+        <h2>Seja Bem vindo ao meu portifolio</h2>
+        <section class="topo-do-site">
+            <div class="interface">
+               <div class="flex">
+                <div class="txt-top-site">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, adipisci tenetur corrupti aspernatur fugiat labore illum recusandae officia dignissimos temporibus nam totam aperiam facilis enim! Incidunt eaque alias magni et.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eveniet ut cumque quas totam distinctio quos aperiam, cupiditate sunt, fuga animi vel ipsa at id, maxime asperiores a odit pariatur?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quasi possimus voluptatem dolorum, quidem temporibus obcaecati corrupti aspernatur placeat repudiandae dolorem quos fugiat, at eos. Odit doloribus ducimus labore adipisci.</p>
+                </div>
+                <div class="img-topo-site">
+                    <img class="perfil" src="images/" alt="">
+                </div>
+               </div>
             </div>
 
         </section>
@@ -144,13 +144,15 @@
             <h2>formulario</h2>
             <div class="interface">
                 
-                    <form method="post" action="form.php">
+                    <form method="post" action="https://formsubmit.co/ajax/kaiquemoreira517@gmail.com"
+                    data-form
+                    >
                         <!-- Para tornar obrigatorio o envio de quaisquer informação use o atributo "required" -->
-                        <input type="text" id="nome" name="nome"  placeholder="Seu nome completo">
-                        <input type="text" id="email" name="email"  placeholder="Seu E-mail">
-                        <input type="text" id="telefone" name="telefone"  placeholder="Seu Seu celular">
-                        <textarea name="" id="" placeholder="Sua mensagem"></textarea>
-                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                        <input type="text" id="nome" name="nome"  placeholder="Seu nome completo" required>
+                        <input type="text" id="email" name="email"  placeholder="Seu E-mail" required>
+                        <input type="text" id="telefone" name="telefone"  placeholder="Seu celular" required>
+                        <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
+                        <div class="btn-enviar"><input type="submit" data-button value="ENVIAR"></div>
                     </form>
             </div>
 
