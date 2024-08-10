@@ -7,3 +7,28 @@
     color: white;
     transform: scale(1.08);
   }
+
+@media screen and (max-width:940px) {
+    /* Para lembrar: caso queira deixar a imagem em primeiro lugar use a class topo-do-site .flex {flex-direction:column-reverse;}*/
+    .flex{
+        flex-direction: column;
+    }
+    
+    /* Header nav */
+    .menu-action, #button{
+        display: none;
+    }
+
+    section.topo-do-site .flex{
+        gap: 0px;
+    }
+    .perfil{
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width:1315px){
+    .perfil{
+        margin-right: 15px;
+    }
+}
