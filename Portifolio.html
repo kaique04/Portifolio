@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>kaique</title>
+<title>My Portifolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Press+Start+2P&display=swap"
@@ -18,7 +18,9 @@
 <link rel="stylesheet" href="componentes/node-card.css">
 <link rel="stylesheet" href="componentes/main-footer.css">
 <link rel="stylesheet" href="componentes/formulario.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <script defer src="app.js"></script>
+<script src="menu.js"defer></script>
 
 </head>
 
@@ -36,8 +38,31 @@
             </nav>
             <a id="button" href="#">Download CV
             </a>
+            
+            
+                <div class="btn-abrir-menu" id="btn-menu">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div>
+
+                    
+                        <nav>
+                            <a  href="#Experiencia">Experiencias</a>
+                            <a  href="#Skills ">Skills</a>
+                            <a  href="#Projetos ">Projetos</a>
+                            <a  href="#formulario ">Form</a>
+                        </nav>
+                    </div>
+                
+            
+
         </div>
-        
+        <div>
+        <div class="overley-menu" id="overley-menu"></div>
+        </div>
     </header>
     <main>
         <h2>Seja Bem vindo ao meu portifolio</h2>

@@ -28,7 +28,7 @@ header .interface{
     justify-content: space-between;
 }
 
-header a {
+header a{
     color: #3D7A72;
     text-decoration: none;
     margin-right: 10px;
