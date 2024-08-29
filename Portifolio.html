@@ -1,96 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portifolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Press+Start+2P&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="componentes/style.css">
-<link rel="stylesheet" href="componentes/wrapper.css">
-<link rel="stylesheet" href="componentes/menu-action.css">
-<link rel="stylesheet" href="componentes/progress-bar.css">
-<link rel="stylesheet" href="componentes/skill-tec.css">
-<link rel="stylesheet" href="componentes/container.css">
-<link rel="stylesheet" href="componentes/sobre.css">
-<link rel="stylesheet" href="componentes/button-arrow.css">
-<link rel="stylesheet" href="componentes/node-card.css">
-<link rel="stylesheet" href="componentes/main-footer.css">
-<link rel="stylesheet" href="componentes/formulario.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<script defer src="app.js"></script>
-<script src="menu.js"defer></script>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="componentes/style.css">
+    <link rel="stylesheet" href="componentes/wrapper.css">
+    <link rel="stylesheet" href="componentes/menu-action.css">
+    <link rel="stylesheet" href="componentes/progress-bar.css">
+    <link rel="stylesheet" href="componentes/skill-tec.css">
+    <link rel="stylesheet" href="componentes/container.css">
+    <link rel="stylesheet" href="componentes/sobre.css">
+    <link rel="stylesheet" href="componentes/button-arrow.css">
+    <link rel="stylesheet" href="componentes/node-card.css">
+    <link rel="stylesheet" href="componentes/main-footer.css">
+    <link rel="stylesheet" href="componentes/formulario.css">
+    <link rel="stylesheet" href="componentes/menumobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="/js/Formulario.js"></script>
+    <script defer src="js/menu.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="interface">
-            <a class="logo" href="https://www.linkedin.com/in/kaique-moreira-883780207/" target="_blank"><img
-                    src="images/linkdin.png" alt="">
+        <div class="main-header">
+            <a class="logo" href="https://www.linkedin.com/in/kaique-moreira-883780207/" target="_blank">
+                <img src="images/linkdin.png" alt="">
             </a>
             <nav>
-                <a class="menu-action" href="#Experiencia">Experiencias</a>
-                <a class="menu-action" href="#Skills ">Skills</a>
-                <a class="menu-action" href="#Projetos ">Projetos</a>
-                <a class="menu-action" href="#formulario ">Form</a>
+                <a class="menu-action" href="#Skills">Skills</a>
+                <a class="menu-action" href="#Projetos">Projetos</a>
+                <a class="menu-action" href="#formulario">Formulario</a>
             </nav>
-            <a id="button" href="#">Download CV
-            </a>
-            
-            
-                <div class="btn-abrir-menu" id="btn-menu">
-                    <i class="bi bi-list"></i>
-                </div>
-                <div class="menu-mobile" id="menu-mobile">
+            <a id="button" href="doc/CurrículoKaique.pdf" download lang="en">Download CV</a>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
                 <div class="btn-fechar">
                     <i class="bi bi-x"></i>
-                </div>
+                </div> 
 
-                    
-                        <nav>
-                            <a  href="#Experiencia">Experiencias</a>
-                            <a  href="#Skills ">Skills</a>
-                            <a  href="#Projetos ">Projetos</a>
-                            <a  href="#formulario ">Form</a>
-                        </nav>
-                    </div>
-                
-            
+                 <div class="profile">
+                    <img src="images/kaique.jpeg" alt="Foto de Perfil" class="profile-pic">
+                    <h2>Kaique Moreira</h2>
+                    <div class="social-icons">
+                        <a href="">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div> 
 
+                <nav>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projetos">Projetos</a>
+                    <a href="#formulario">Form</a>
+                </nav>
+                <a class="button" href="doc/CurrículoKaique.pdf" download lang="en">Download CV</a>
+            </div>
+            </div>
         </div>
         <div>
-        <div class="overley-menu" id="overley-menu"></div>
+            <div class="overley-menu" id="overley-menu"></div>
         </div>
     </header>
+
     <main>
-        <h2>Seja Bem vindo ao meu portifolio</h2>
+        <h2 class="home">Seja Bem-vindo ao meu portfólio</h2>
+
         <section class="topo-do-site">
             <div class="interface">
-               <div class="flex">
-                <div class="txt-top-site">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, adipisci tenetur corrupti aspernatur fugiat labore illum recusandae officia dignissimos temporibus nam totam aperiam facilis enim! Incidunt eaque alias magni et.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eveniet ut cumque quas totam distinctio quos aperiam, cupiditate sunt, fuga animi vel ipsa at id, maxime asperiores a odit pariatur?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quasi possimus voluptatem dolorum, quidem temporibus obcaecati corrupti aspernatur placeat repudiandae dolorem quos fugiat, at eos. Odit doloribus ducimus labore adipisci.</p>
+                <div class="flex">
+                    <div class="txt-top-site">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, adipisci tenetur corrupti
+                            aspernatur fugiat labore illum recusandae officia dignissimos temporibus nam totam aperiam
+                            facilis enim! Incidunt eaque alias magni et.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eveniet ut cumque quas
+                            totam distinctio quos aperiam, cupiditate sunt, fuga animi vel ipsa at id, maxime asperiores
+                            a odit pariatur?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quasi possimus voluptatem
+                            dolorum, quidem temporibus obcaecati corrupti aspernatur placeat repudiandae dolorem quos
+                            fugiat, at eos. Odit doloribus ducimus labore adipisci.</p>
+                    </div>
+                    <div class="img-topo-site">
+                        <img class="perfil" src="images/" alt="">                        
+                    </div>
                 </div>
-                <div class="img-topo-site">
-                    <img class="perfil" src="images/" alt="">
-                </div>
-               </div>
             </div>
-
-        </section>
-        <section id="Experiencia">
-            <h2 class="main-title">Experiencia</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eos dolore id esse accusantium aspernatur
-                consequatur sint minus, sed illo corporis voluptatibus ducimus dignissimos dicta, recusandae dolores
-                excepturi. Quod, doloremque.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum libero vitae quas atque fuga eius, at,
-                neque dolores cum nisi blanditiis, porro eos reiciendis doloribus sequi modi sint sunt. Placeat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At qui enim dolore ullam labore laboriosam
-                delectus distinctio itaque saepe facere natus, temporibus doloribus reprehenderit, architecto ducimus
-                sunt quisquam provident deserunt.</p>
         </section>
 
         <section id="Skills">
@@ -98,45 +104,45 @@
 
             <div class="wrapper-skill">
                 <article class="skill-tec">
-                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img class="icon"
-                            src="images/ico_html5.png" alt=""></a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                        <img class="icon" src="images/ico_html5.png" alt="">
+                    </a>
                     <div class="right">
-                        <h3 class="title">html</h3>
-                        <progress class="progress-bar" value="70" max="100">70 %</progress>
+                        <h3 class="title">HTML</h3>
+                        <progress class="progress-bar" value="70" max="100">70%</progress>
                     </div>
                 </article>
 
                 <article class="skill-tec">
-                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/What_is_CSS"
-                        target="_blank"><img class="icon" src="images/ico_css3.png" alt=""></a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
+                        <img class="icon" src="images/ico_css3.png" alt="">
+                    </a>
                     <div class="right">
-                        <h3 class="title">css</h3>
-                        <progress class="progress-bar" value="70" max="100">70 %</progress>
+                        <h3 class="title">CSS</h3>
+                        <progress class="progress-bar" value="70" max="100">70%</progress>
                     </div>
                 </article>
 
                 <article class="skill-tec">
-                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img class="icon"
-                            src="images/ico_js.png" alt=""></a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                        <img class="icon" src="images/ico_js.png" alt="">
+                    </a>
                     <div class="right">
-                        <h3 class="title">Javascript</h3>
-                        <progress class="progress-bar" value="40" max="100">70 %</progress>
+                        <h3 class="title">JavaScript</h3>
+                        <progress class="progress-bar" value="40" max="100">40%</progress>
                     </div>
                 </article>
 
                 <article class="skill-tec">
-                    <a class="progress" href="https://www.java.com/pt-BR/download/help/whatis_java.html"
-                        target="_blank"><img class="java" src="images/javapixelart-removebg-preview.png" alt=""></a>
+                    <a href="https://www.java.com/pt-BR/download/help/whatis_java.html" target="_blank">
+                        <img class="java" src="images/pixil-frame-0.png" alt="">
+                    </a>
                     <div class="right">
                         <h3 class="title-java">Java</h3>
-                        <progress class="progress-bar-java" value="40" max="100">70 %</progress>
+                        <progress class="progress-bar-java" value="40" max="100">40%</progress>
                     </div>
                 </article>
             </div>
-
-
-
-
         </section>
 
         <section id="Projetos">
@@ -146,41 +152,39 @@
                 <div class="container">
                     <div class="card">
                         <img class="img-port" src="images/Jogodamemoria.png" alt="">
-                        <a href="indexjg.html">
+                        <a href="Jogo.html">
                             <div class="overley">Projeto1</div>
                         </a>
                     </div>
                     <div class="card">
-                        <img class="img-port" src="">
+                        <img class="img-port" src="" alt="">
                         <a href="#">
                             <div class="overley">Projeto2 <br> Em breve</div>
                         </a>
                     </div>
                     <div class="card">
-                        <img class="img-port" src="">
+                        <img class="img-port" src="" alt="">
                         <a href="#">
                             <div class="overley">Projeto3 <br> Em breve</div>
                         </a>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section class="formulario" id="formulario">
-            <h2>formulario</h2>
+            <h2>Formulário</h2>
             <div class="interface">
-                
-                    <form method="post" action="https://formsubmit.co/ajax/kaiquemoreira517@gmail.com"
-                    data-form
-                    >
-                        <!-- Para tornar obrigatorio o envio de quaisquer informação use o atributo "required" -->
-                        <input type="text" id="nome" name="nome"  placeholder="Seu nome completo" required>
-                        <input type="text" id="email" name="email"  placeholder="Seu E-mail" required>
-                        <input type="text" id="telefone" name="telefone"  placeholder="Seu celular" required>
-                        <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
-                        <div class="btn-enviar"><input type="submit" data-button value="ENVIAR"></div>
-                    </form>
+                <form method="post" action="https://formsubmit.co/ajax/kaiquemoreira517@gmail.com" data-form>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    <input type="text" id="email" name="email" placeholder="Seu E-mail" required>
+                    <input type="text" id="telefone" name="telefone" placeholder="Seu celular" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" data-button value="ENVIAR">
+                    </div>
+                </form>
             </div>
-
         </section>
 
         <footer class="main-footer">
@@ -194,7 +198,7 @@
                 <img src="images/githubart.png" alt="">
             </a>
         </footer>
-
+    </main>
 </body>
 
 </html>

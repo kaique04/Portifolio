@@ -18,12 +18,37 @@
 
 @media screen and (max-width:940px) {
     /* Para lembrar: caso queira deixar a imagem em primeiro lugar use a class topo-do-site .flex {flex-direction:column-reverse;}*/
+    
+    .menu-mobile .button{
+        position: absolute;
+        bottom: 20px; 
+        right: 0px;
+        background-color: #7209B7;
+        color: black;
+        display: inline-block;
+        height: 50px;
+        width: 180px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 55px;
+        box-shadow: 5px 5px 0px #000;
+        transition: 0.9s;
+    }
+
+    .button:hover{
+        color:black ;
+        background-color: white;
+        transform: scale(1.08);
+    }
+
+    .txt-top-site{
+        margin-left: 10px;
+    }
 
     .flex{
         flex-direction: column;
     }
     
-    /* Header nav */
     .menu-action, #button{
         display: none;
     }
@@ -37,7 +62,7 @@
     /* Style menu mobile */
 
     .menu-mobile{
-        background-color: #27544efb;
+        background-color: #001B34;
         height: 100%;
         position: fixed;
         top: 0;
@@ -104,6 +129,7 @@
 
     .btn-abrir-menu{
         display: block;
+        margin-bottom: 25px;
     }
 
 }

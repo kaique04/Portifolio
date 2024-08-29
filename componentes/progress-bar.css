@@ -1,6 +1,5 @@
 .progress-bar{
     border: 3px solid black;
-    border-radius: 5px;
     height: 30px;
     margin-left:-20px;
     margin-bottom:10px ;
@@ -14,17 +13,14 @@ progress {
 
 progress::-webkit-progress-bar {
     background-color: #ffffff;
-    border-radius: 5px;
 }
 
 progress::-webkit-progress-value {
-    background-color: #37A596;  
-    border-radius: 5px; 
+    background-color: #001B34;   
 }
 
 .progress-bar-java{
     border: 3px solid black;
-    border-radius: 5px;
     height: 30px;
     margin-left:125px;
     margin-bottom:10px ;
