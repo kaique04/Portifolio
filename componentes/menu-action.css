@@ -19,10 +19,11 @@
 @media screen and (max-width:940px) {
     /* Para lembrar: caso queira deixar a imagem em primeiro lugar use a class topo-do-site .flex {flex-direction:column-reverse;}*/
     
+
     .menu-mobile .button{
         position: absolute;
         bottom: 20px; 
-        right: 0px;
+        left: 40px;
         background-color: #7209B7;
         color: black;
         display: inline-block;
@@ -102,6 +103,7 @@
     }
 
     .menu-mobile nav a{
+        text-align: center;
         color: #fff;
         padding: 30px 4%;
         /* transition: 0.8s; */
