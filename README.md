@@ -1,2 +1,2 @@
-Implatanção pelo vercel:[ https://portifolio-wheat-delta.vercel.app/](https://portifolio-nine-jet.vercel.app/)
+Implatanção pelo vercel:
 Ainda em finalização......
