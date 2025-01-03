@@ -83,8 +83,8 @@ main{
 main h2{
     text-align: center;
     margin: 0px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    font-size: 23px;
+    padding: 20px 5px 15px;
     line-height: 1.5;
 }
 
@@ -96,7 +96,8 @@ section.topo-do-site .flex{
 section .txt-top-site p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    line-height: 20px
+    line-height: 20px;
+    padding: 0px 5px;
 }
 
 .topo-do-site .img-topo-site img{
