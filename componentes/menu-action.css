@@ -16,7 +16,7 @@
     display: none;
 }
 
-@media screen and (max-width:940px) {
+@media (max-width:940px) {
     /* Para lembrar: caso queira deixar a imagem em primeiro lugar use a class topo-do-site .flex {flex-direction:column-reverse;}*/
     .menu-mobile .button{
         position: absolute;
@@ -96,8 +96,6 @@
     .menu-mobile nav{
         display: flex;
         flex-direction: column;
-        text-align: right;
-        margin: 20px 0px 0px;
     }
 
     .menu-mobile nav a{
@@ -110,6 +108,11 @@
     .menu-mobile nav a:hover{
         transform:scale(1.02); 
         background-color: rgba(16, 59, 59, 0.074);
+    }
+
+    .menu-mobile nav a i{
+        font-size: 20px;
+        margin-right: 10px;
     }
 
     .overley-menu{
@@ -131,7 +134,25 @@
         display: block;
         margin-bottom: 25px;
     }
+    
 
+    .profile h2{
+        line-height: 30px;
+    }
+
+    form{
+        padding-left:10px;
+        padding-right: 40px;
+    }
+    
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card{
+        display: none;
+    }
 }
 @media screen and (max-width:1315px){
     .perfil{

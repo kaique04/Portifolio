@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +8,8 @@
   <link rel="stylesheet" href="../css/game.css">
 
   <script defer src="../js/game.js"></script>
+  <script defer src="../js/modal.js"></script>
+
 
   <title>Memory Game</title>
 </head>
@@ -20,6 +23,16 @@
     </header>
 
     <div class="grid"></div>
+
+    <div id="game-over-modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Fim de Jogo!</h2>
+        <p>Parabéns, <span id="winner-name"></span>! Seu tempo foi de <span id="final-time"></span> segundos.</p>
+        <p>Acertos: <span id="modal-hits"></span></p>
+        <p>Erros: <span id="modal-mistakes"></span></p>
+        <button id="restart-button">Jogar Novamente</button>
+      </div>
+    </div>
   </main>
 
 </body>

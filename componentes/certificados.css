@@ -1,0 +1,86 @@
+#Certificados {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  #Certificados h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .container-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .curso-item {
+    background-color: #ffff;
+    height: 220px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .curso-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  .curso-item img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .curso-item h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #000;
+    line-height: 20px;
+  }
+  
+  .curso-item p {
+    margin: 0;
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+  }
+
+  .curso-item .node{
+    position: absolute;
+    margin-top:200px;
+  }
+  
+  .curso-item .html{
+    position: absolute;
+    margin-top:180px;
+  }
+
+  .curso-item .JavaScript{
+    position: absolute;
+    margin-top:200px;
+  }
+
+  .curso-item .spring{
+    position: absolute;
+    margin-left: 60px;
+    margin-top:200px;
+  }
+
+  .curso-item .java{
+    position: absolute;
+    height: 55px;
+    margin-right: 60px;
+    margin-top: 195px;
+  }

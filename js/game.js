@@ -1,6 +1,12 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
+const modal = document.getElementById('game-over-modal');
+const winnerName = document.getElementById('winner-name');
+const finalTime = document.getElementById('final-time');
+const modalHits = document.getElementById('modal-hits');
+const modalMistakes = document.getElementById('modal-mistakes');
+const restartButton = document.getElementById('restart-button');
 
 const characters = [
   'abigail',
@@ -18,13 +24,23 @@ const createElement = (tag, className) => {
 
 let firstCard = '';
 let secondCard = '';
+let hitCount = 0;
+let mistakeCount = 0;
 
 const checkEndGame = () => {
   const disabledCards = document.querySelectorAll('.disabled-card');
 
-  if (disabledCards.length === 20) {
+  if (disabledCards.length === characters.length * 2) {
     clearInterval(this.loop);
-    alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML}`);
+
+    // Atualiza o modal com os resultados
+    winnerName.textContent = spanPlayer.innerHTML;
+    finalTime.textContent = timer.innerHTML;
+    modalHits.textContent = hitCount;
+    modalMistakes.textContent = mistakeCount;
+
+    // Exibe o modal
+    modal.style.display = 'block';
   }
 }
 
@@ -33,52 +49,45 @@ const checkCards = () => {
   const secondCharacter = secondCard.getAttribute('data-character');
 
   if (firstCharacter === secondCharacter) {
-
     firstCard.firstChild.classList.add('disabled-card');
     secondCard.firstChild.classList.add('disabled-card');
 
     firstCard = '';
     secondCard = '';
 
-    checkEndGame();
+    hitCount++; // Incrementa o número de acertos
 
+    checkEndGame();
   } else {
     setTimeout(() => {
-
       firstCard.classList.remove('reveal-card');
       secondCard.classList.remove('reveal-card');
 
       firstCard = '';
       secondCard = '';
-
     }, 500);
-  }
 
+    mistakeCount++; // Incrementa o número de erros
+  }
 }
 
 const revealCard = ({ target }) => {
-
   if (target.parentNode.className.includes('reveal-card')) {
     return;
   }
 
   if (firstCard === '') {
-
     target.parentNode.classList.add('reveal-card');
     firstCard = target.parentNode;
-
   } else if (secondCard === '') {
-
     target.parentNode.classList.add('reveal-card');
     secondCard = target.parentNode;
 
     checkCards();
-
   }
 }
 
 const createCard = (character) => {
-
   const card = createElement('div', 'card');
   const front = createElement('div', 'face front');
   const back = createElement('div', 'face back');
@@ -89,7 +98,7 @@ const createCard = (character) => {
   card.appendChild(back);
 
   card.addEventListener('click', revealCard);
-  card.setAttribute('data-character', character)
+  card.setAttribute('data-character', character);
 
   return card;
 }
@@ -106,16 +115,25 @@ const loadGame = () => {
 }
 
 const startTimer = () => {
-
   this.loop = setInterval(() => {
     const currentTime = +timer.innerHTML;
     timer.innerHTML = currentTime + 1;
   }, 1000);
-
 }
 
+// Reiniciar o jogo
+restartButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+  grid.innerHTML = '';
+  timer.innerHTML = '0';
+  hitCount = 0;
+  mistakeCount = 0;
+  startTimer();
+  loadGame();
+});
+
 window.onload = () => {
-  spanPlayer.innerHTML = localStorage.getItem('player');
+  spanPlayer.innerHTML = localStorage.getItem('player') || 'Jogador';
   startTimer();
   loadGame();
 }

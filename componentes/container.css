@@ -10,8 +10,7 @@ section #projetos {
   cursor: pointer;
   position: relative;
   background-color: black;
-  
-  overflow: hidden; /* Adicionado para garantir que o conteúdo fique dentro do card */
+  overflow: hidden; 
 }  
 
 .card .img-port {

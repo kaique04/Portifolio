@@ -6,7 +6,7 @@
 }
 
 .profile .social-icons a{
-    font-size: 30px;
+    font-size: 27px;
     display: inline-block;
     background: #212431;
     color: #fff;
@@ -20,11 +20,16 @@
     transition: 0.3s;
 } 
 
+.profile .social-icons a:hover{
+    background-color: rgb(45, 105, 105);
+}
+
 .profile {
     text-align: center;
 }
 
 .profile-pic {
+    background-color: black;
     height: 100px;
     width: 100px;
     border-radius: 50% ;
@@ -35,12 +40,12 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
+    
 }
 
 .social-icons img {
     width: 24px;
-    height: 24px;
+    height: 20px;
 }
 
 nav ul {
