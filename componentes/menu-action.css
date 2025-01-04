@@ -151,9 +151,6 @@
         padding-right: 20px;
     }
 
-    .card{
-        display: none;
-    }
 }
 @media screen and (max-width:1315px){
     .perfil{
