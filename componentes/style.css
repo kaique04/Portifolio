@@ -113,9 +113,9 @@ section .txt-top-site p{
     }
 }
 .perfil{
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
+    width: 240px;
+    height: 260px;
+    border-radius: 10%;
     background-color: black;
     margin-bottom: 70px;
 }
