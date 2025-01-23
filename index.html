@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="componentes/formulario.css">
     <link rel="stylesheet" href="componentes/menumobile.css">
     <link rel="stylesheet" href="componentes/certificados.css">
-    <link rel="stylesheet" href="componentes/carrosel.css">
+    <link rel="stylesheet" href="componentes/menu-lateral.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script defer src="/js/Formulario.js"></script>
     <script defer src="js/menu.js"></script>
+    <script defer src="js/escrevendo.js"></script>
 </head>
 
 <body>
@@ -33,16 +34,11 @@
             <a class="logo" href="https://www.linkedin.com/in/kaique-moreira-883780207/" target="_blank">
                 <img src="images/linkdin.png" alt="" class="logo-linkdin">
             </a>
-            <nav>
-                <a class="menu-action" href="#Skills">Skills</a>
-                <a class="menu-action" href="#Projetos">Projetos</a>
-                <a class="menu-action" href="#Certificados">Certificados</a>
-                <a class="menu-action" href="#formulario">Formulario</a>
-            </nav>
-            <a id="button" href="doc/Currículo TI kaique.pdf" download lang="en">Download CV</a>
+
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
-            </div>
+            </div>  
+
             <div class="menu-mobile" id="menu-mobile">
                 <div class="btn-fechar">
                     <i class="bi bi-x"></i>
@@ -85,12 +81,53 @@
             <div class="overley-menu" id="overley-menu"></div>
         </div>
     </header>
+        <div class="menu-lateral" id="menu-lateral">
+
+
+             <div class="profile">
+                    <img src="images/kaiqueperfil.jpeg" alt="" class="profile-pic rounded-circle">
+                        <h2 >Kaique Moreira</h2>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/kaique._.moreiiraa/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://github.com/kaique04">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kaique-moreira-883780207/">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+            </div> 
+            <nav>
+                <a href="#Skills">
+                    <i class="bi bi-person"></i>Skills
+                </a>
+                <a href="#Projetos">
+                <i class="bi bi-file-earmark-code"></i>Projetos
+                </a>
+                <a href="#Certificados">
+                    <i class="bi bi-award"></i>Certificados
+                </a>
+                <a href="#formulario">
+                    <i class="bi bi-envelope"></i>Formulario
+                </a>
+            </nav>
+            <a class="button" href="doc/Currículo TI kaique.pdf" download lang="en">Download CV</a>
+        </div>
+        </div>
+    </div>
+
+    <!--  -->
 
     <main>
-        <h2 class="home">Seja Bem-vindo ao meu portfólio</h2>
+        <h2 class="home">kaique Dos Santos Moreira</h2>
 
         <section class="topo-do-site">
-            <div class="interface">
+
+            <div id="typewrite"></div>
+
+            <!-- <div class="interface">
                 <div class="flex">
                     <div class="txt-top-site">
                         <p>Olá! Meu nome é Kaique, tenho 21 anos e moro em Cotia, São Paulo. Atualmente, estou cursando Sistemas de Informação nas Faculdades Integradas Rio Branco, onde desenvolvo minhas habilidades em tecnologia e programação.</p>
@@ -103,7 +140,7 @@
                         <img class="perfil" src="images/kaiqueperfil.jpeg" alt="">                        
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section id="Skills">
@@ -223,19 +260,19 @@
             </div>
         </section>
 
-        <footer class="main-footer">
-            <a class="action">
-                <img src="images/discord.png" alt="">
-            </a>
-            <a class="action" href="https://www.instagram.com/kaique._.moreiiraa/">
-                <img class="insta" src="images/insta.png" alt="">
-            </a>
-            <a class="action" href="https://github.com/kaique04">
-                <img src="images/githubart.png" alt="">
-            </a>
-        </footer>
+        <section id="footer">
+            <footer class="main-footer">
+                <a class="action">
+                    <img src="images/discord.png" alt="">
+                </a>
+                <a class="action" href="https://www.instagram.com/kaique._.moreiiraa/">
+                    <img class="insta" src="images/insta.png" alt="">
+                </a>
+                <a class="action" href="https://github.com/kaique04">
+                    <img src="images/githubart.png" alt="">
+                </a>
+            </footer>
+        </section>
     </main>
-</body>
-
-
+</body> 
 </html>

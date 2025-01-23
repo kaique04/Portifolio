@@ -1,0 +1,63 @@
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px; 
+    height: 100%; 
+    background: linear-gradient(9180deg,#001B34, #040b1d);
+    z-index: 1; 
+    padding: 20px; 
+}
+
+.menu-lateral nav a{
+    height: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 20px 4%;
+    /* transition: 0.8s; */
+}
+
+.menu-lateral nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.menu-lateral nav a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.menu-lateral nav a:hover{
+    transform:scale(1.02); 
+    background-color: rgba(16, 59, 59, 0.074);
+}
+
+
+.menu-lateral .button{
+    position: absolute;
+    text-decoration: none;
+    bottom: 55px; 
+    left: 90px;
+    background-color: #7209B7;
+    color: black;
+    display: inline-block;
+    height: 50px;
+    width: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 55px;
+    box-shadow: 5px 5px 0px #000;
+    transition: 0.9s;
+}
+
+.button:hover{
+    color:black ;
+    background-color: white;
+    transform: scale(1.08);
+}
+
+.profile h2{
+    font-size: 18px;
+}

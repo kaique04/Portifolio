@@ -33,11 +33,18 @@
         box-shadow: 5px 5px 0px #000;
         transition: 0.9s;
     }
-
     .button:hover{
         color:black ;
         background-color: white;
         transform: scale(1.08);
+    }
+
+    header{
+        display: block  ;
+    }
+
+    .menu-lateral{
+        display: none;
     }
 
     .txt-top-site{
@@ -151,6 +158,40 @@
         padding-right: 20px;
     }
 
+    #typewrite{
+        margin-left: 0px;
+        padding-left: 15px;
+        line-height: 22px;
+    }
+
+    .topo-do-site{
+        height:55vh;
+    }
+
+    .home{
+        margin-left: 0px;
+        margin-top: 45px;
+    }
+
+    #Skills{
+        margin-left: 0px;
+    }
+
+    #Projetos{
+        margin-left: 0px;
+    }
+
+    #formulario{
+        margin-left: 0px;
+    }
+
+    #footer{
+        margin-left: 0px;
+    }
+
+    main #Certificados{
+        margin-left: 0px;
+    }
 }
 @media screen and (max-width:1315px){
     .perfil{
